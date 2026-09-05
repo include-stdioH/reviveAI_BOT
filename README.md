@@ -46,3 +46,33 @@ MANDATE_RETRY · HINGLISH_VOICE_RECOVERY · PROMISE_TO_PAY
   the agent handles it gracefully and never fabricates data.
 - Files are n8n SDK TypeScript sources. IDs/credential references are
   environment-specific; re-point them when importing into another instance.
+  .gitignore
+node_modules/
+*.log
+.env
+.DS_Store
+dist/
+package.json
+{
+  "name": "revive-revenue-recovery-agent",
+  "version": "1.0.0",
+  "description": "REVIVE — Razorpay Revenue Recovery AI Agent. A Hinglish conversational n8n workflow covering seven revenue-recovery motions.",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "n8n",
+    "razorpay",
+    "revenue-recovery",
+    "ai-agent",
+    "hinglish",
+    "telegram",
+    "workflow-automation"
+  ],
+  "workflows": {
+    "revive-recovery.workflow.ts": "REVIVE — Revenue Recovery Agent (main)",
+    "cleanup-read-audit.workflow.ts": "Cleanup — audit_log maintenance helper"
+  },
+  "scripts": {
+    "note": "These are n8n SDK TypeScript workflow sources. Import them into an n8n instance rather than running them directly."
+  }
+}
